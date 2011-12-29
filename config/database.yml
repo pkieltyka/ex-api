@@ -1,0 +1,15 @@
+defaults: &defaults
+  host: localhost
+
+development:
+  <<: *defaults
+  database: xdb_dev
+
+test:
+  <<: *defaults
+  database: xdb_test
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  database: xdb
